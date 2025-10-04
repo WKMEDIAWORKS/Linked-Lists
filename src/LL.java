@@ -98,7 +98,39 @@ public class LL {
         lastNode.next = node.next;
         size--;
         System.out.println("Node deleted successfully.");
+    }
+    public Node findNode(int value) {
+        Node node = head;
+        for(int i = 0; i < size; i++) {
+            if(node.value == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+    public int findIndex(int value) {
+        Node node = head;
+       for(int i = 0; i < size; i++) {
+           if(node.value == value) {
+               return i;
+           }
+           node = node.next;
+       }
+       return -1;
+    }
+    public void reverse() {
+        Node current  = head;
+        Node previous = null;
+        Node next;
 
+        while(current != null) {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
     }
     public void printVal(int index) {
         Node node = get(index);

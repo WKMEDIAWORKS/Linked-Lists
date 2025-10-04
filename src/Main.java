@@ -7,7 +7,8 @@ public class Main {
         list.insertFirst(2);
         list.insertFirst(4);
         list.insertFirst(18);
-        list.delete(-1);
-        list.display();
+        list.reverse();
+//        System.out.println("The value you are looking for is at Node " + list.findNode(18));
+       list.display();
     }
 }
