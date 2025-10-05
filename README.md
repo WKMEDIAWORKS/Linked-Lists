@@ -1,4 +1,4 @@
-These are the implementations of a singly and a doubly linked list.
+These are the implementations of a singly, doubly and circular linked lists.
 Users can insert elements:
 - At the first index
 - At the last index
